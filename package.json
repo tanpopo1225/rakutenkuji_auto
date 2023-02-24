@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
+    "got": "^12.5.3"
+  },
+  "devDependencies": {
+    "safaridriver": "^0.0.4",
+    "selenium-webdriver": "^4.8.0"
+  }
+}
