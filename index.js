@@ -95,12 +95,7 @@ async function kuji(driver) {
       }
     }
     catch (error) {
-      if (error instanceof TimeoutError) {
-        console.log('くじをすでに引いています。')
-      }
-      else {
-        console.log(await driver.getTitle()+':くじは引けませんでした。')
-      }
+      console.log(await driver.getTitle()+':くじは引けませんでした。')
     }
   }
   driver.quit()
