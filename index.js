@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-const { Actions, Builder, By, Key, until } = require('selenium-webdriver')
+const { Builder, By, Key, until } = require('selenium-webdriver')
 driver = new Builder().forBrowser('chrome').build()
 
 //くじのリンクは以下のページから拝借
@@ -99,4 +99,6 @@ async function kuji(driver) {
     }
   }
   driver.quit()
+  today = new Date()
+  console.log(today.getFullYear()+'年'+(today.getMonth()+1)+'月'+today.getDate()+'日分完了')
 })()
